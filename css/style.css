@@ -2936,7 +2936,7 @@ iframe {
   position: relative;
   padding-top: 8.5rem;
   margin-bottom: 6rem;
-  background-image: url("/img/appeal-bg.png");
+  background-image: url("../img/appeal-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -3571,7 +3571,7 @@ iframe {
 }
 
 #koleso-down {
-  content: url(/img/koleso-down.png);
+  content: url("../img/koleso-down.png");
   position: absolute;
   width: 348px;
   height: 108px;
