@@ -3325,7 +3325,7 @@ iframe {
   right: 0;
   z-index: -1;
   opacity: 0.14;
-  background-image: url("/img/about_company_bg.jpg");
+  background-image: url("../img/about_company_bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
