@@ -9074,6 +9074,10 @@ iframe {
     display: none;
   }
 
+  .instruction__form {
+    max-width: 100%;
+  }
+
   .prize {
     margin-bottom: 0;
   }
