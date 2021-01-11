@@ -3305,7 +3305,7 @@ iframe {
 }
 
 .instruction__cards {
-  padding: 4rem 5rem 3rem;
+  padding: 4rem 0 3rem;
 }
 
 .instruction__cards-item {
@@ -8807,6 +8807,7 @@ iframe {
 
   .instruction__cards {
     padding: 0;
+    margin: 0;
   }
 
   .instruction__cards-item {
@@ -9001,7 +9002,7 @@ iframe {
   }
 
   .instruction__cards-item {
-    padding: 0 3rem;
+    padding: 0 2.5rem;
   }
 
   .prize__form-group .form__input {
