@@ -3689,9 +3689,8 @@ iframe {
   color: #183749;
 }
 
-.map__iframe {
-  height: 620px;
-  display: block;
+.map>ymaps {
+  height: 620px !important;
 }
 
 .footer {
@@ -9200,8 +9199,8 @@ iframe {
     border-width: 0 20px 40px;
   }
 
-  .map__iframe {
-    height: 500px;
+  .map>ymaps {
+    height: 500px !important;
   }
 
   .footer__left {
