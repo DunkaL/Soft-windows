@@ -3650,6 +3650,7 @@ iframe {
 
 .map {
   position: relative;
+  min-height: 620px;
 }
 
 .map__contacts {
@@ -3687,10 +3688,6 @@ iframe {
   width: 40px;
   font-size: 3rem;
   color: #183749;
-}
-
-.map>ymaps {
-  height: 620px !important;
 }
 
 .footer {
