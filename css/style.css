@@ -2383,17 +2383,18 @@ iframe {
 
 .btn--gift {
   position: fixed;
-  top: 100px;
-  left: 0;
-  width: 40px;
-  height: 333px;
+  top: 250px;
+  left: -143px;
   opacity: 0.5;
   background-color: #ff4e00;
   -webkit-box-shadow: 0px 9px 6px 1px rgba(0,0,0,0.14);
           box-shadow: 0px 9px 6px 1px rgba(0,0,0,0.14);
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 0 10px 10px;
   z-index: 9999;
   overflow: hidden;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
   -webkit-transition: opacity .2s linear;
   -o-transition: opacity .2s linear;
   transition: opacity .2s linear;
@@ -2402,17 +2403,17 @@ iframe {
 .btn--gift::before {
   content: "";
   position: absolute;
-  top: 100%;
+  top: 0;
   left: 0;
-  width: 90px;
+  width: 10px;
   height: 100%;
   opacity: .36;
   background-color: #fff;
-  -webkit-transform: skew(80deg);
-      -ms-transform: skew(80deg);
-          transform: skew(80deg);
-  -webkit-animation-name: flare2;
-          animation-name: flare2;
+  -webkit-transform: skew(190deg);
+      -ms-transform: skew(190deg);
+          transform: skew(190deg);
+  -webkit-animation-name: flare;
+          animation-name: flare;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   -webkit-animation-timing-function: ease-in-out;
@@ -2422,13 +2423,8 @@ iframe {
 }
 
 .btn--gift p {
-  width: 295px;
   margin: 0;
-  margin-left: -146px;
   color: #fff;
-  -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-          transform: rotate(-90deg);
 }
 
 .btn--gift:hover {
@@ -2460,34 +2456,6 @@ iframe {
 
   100% {
     left: 100%;
-  }
-}
-
-@-webkit-keyframes flare2 {
-  0% {
-    top: 100%;
-  }
-
-  50% {
-    top: -100%;
-  }
-
-  100% {
-    top: -100%;
-  }
-}
-
-@keyframes flare2 {
-  0% {
-    top: 100%;
-  }
-
-  50% {
-    top: -100%;
-  }
-
-  100% {
-    top: -100%;
   }
 }
 
