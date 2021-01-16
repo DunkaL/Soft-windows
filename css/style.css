@@ -3115,11 +3115,13 @@ iframe {
   z-index: 9;
 }
 
+.no-webp .appeal__bg {
+  background-image: url("../img/appeal-bg.png"); }
+
 .appeal__bg {
   position: relative;
   padding-top: 10rem;
   margin-bottom: 6rem;
-  background-image: url("../img/appeal-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -3537,6 +3539,9 @@ iframe {
   margin-bottom: 2.5rem;
 }
 
+.no-webp .about-company::before {
+  background-image: url("../img/about_company_bg.jpg"); }
+
 .about-company::before {
   content: "";
   position: absolute;
@@ -3546,7 +3551,6 @@ iframe {
   right: 0;
   z-index: -1;
   opacity: 0.14;
-  background-image: url("../img/about_company_bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3618,12 +3622,14 @@ iframe {
   margin-right: 1rem;
 }
 
+.no-webp #tut9PositionedContainer {
+  background-image: url("../img/koleso/img-bg.png"); }
+
 #tut9PositionedContainer {
   position: relative;
   width: 434px;
   padding-bottom: 40px;
   margin: 0 auto;
-  background-image: url("../img/koleso/img-bg.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -9428,3 +9434,9 @@ iframe {
     display: none !important;
   }
 }
+
+.webp .appeal__bg { background-image: url(../img/appeal-bg.webp); }
+
+.webp .about-company::before { background-image: url(../img/about_company_bg.webp); }
+
+.webp #tut9PositionedContainer { background-image: url(../img/koleso/img-bg.webp); }
