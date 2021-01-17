@@ -983,20 +983,19 @@
             </div>
             <div class="p-lg-5">
                 <video
-                id="my-video"
-                class="video-js"
-                controls
-                preload="auto"
-                width="auto"
-                height="542"
-                poster="poster.jpg"
-                data-setup="{}">
-          
-                <source src="img/video/myagkie-okna-dlya-natashi-korolyovoj-ot-«fabriki-myagkix-okon-55m.ru»--—--bona-kompani.mp4" type="video/mp4" />
-                <p class="vjs-no-js">
-                  Для просмотра этого видео включите JavaScript
-                </p>
-              </video>
+                    id="my-video"
+                    class="video-js"
+                    controls
+                    preload="auto"
+                    width="auto"
+                    height="542"
+                    poster="img/video/poster1.jpg"
+                    data-setup="{}">
+                    <source src="img/video/myagkie-okna-dlya-natashi-korolyovoj-ot-«fabriki-myagkix-okon-55m.ru»--—--bona-kompani.mp4" type="video/mp4" />
+                    <p class="vjs-no-js">
+                    Для просмотра этого видео включите JavaScript
+                    </p>
+                </video>
             </div>
         </div>
     </section>
@@ -1034,16 +1033,16 @@
                     <div class="swiper-container gallery-thumbs">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="swiper-slide__img b-lazy" data-src="img/slider_1.jpg"></div>
+                                <div class="swiper-slide__img" style="background-image: url('img/slider_1.jpg')"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide__img b-lazy" data-src="img/slider_2.jpg"></div>
+                                <div class="swiper-slide__img" style="background-image: url('img/slider_2.jpg')"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide__img b-lazy" data-src="img/slider_3.jpg"></div>
+                                <div class="swiper-slide__img" style="background-image: url('img/slider_3.jpg')"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide__img b-lazy" data-src="img/slider_4.jpg"></div>
+                                <div class="swiper-slide__img" style="background-image: url('img/slider_4.jpg')"></div>
                             </div>
                         </div>
                     </div>
@@ -1097,16 +1096,16 @@
                     <div class="swiper-container gallery-thumbs">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="swiper-slide__img b-lazy" data-src="img/slider_5.jpg"></div>
+                                <div class="swiper-slide__img" style="background-image: url('img/slider_5.jpg')"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide__img b-lazy" data-src="img/slider_6.jpg"></div>
+                                <div class="swiper-slide__img" style="background-image: url('img/slider_6.jpg')"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide__img b-lazy" data-src="img/slider_7.jpg"></div>
+                                <div class="swiper-slide__img" style="background-image: url('img/slider_7.jpg')"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide__img b-lazy" data-src="img/slider_8.jpg"></div>
+                                <div class="swiper-slide__img" style="background-image: url('img/slider_8.jpg')"></div>
                             </div>
                         </div>
                     </div>
@@ -1140,8 +1139,8 @@
                     <div class="swiper-container gallery-top">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide cocoen">
-                                <img src="img/slider_9.jpg" alt="">
-                                <img src="img/slider_11.jpg" alt="">                              
+                                <img src="img/slider_9.jpg" alt="slide">
+                                <img src="img/slider_11.jpg" alt="slide">                              
                             </div>
                             <div class="swiper-slide">
                                 <img class="swiper-slide__img swiper-lazy" data-src="img/slider_10.jpg" alt="slide">
@@ -1161,16 +1160,16 @@
                     <div class="swiper-container gallery-thumbs">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="swiper-slide__img b-lazy" data-src="img/slider_9.jpg"></div>
+                                <div class="swiper-slide__img" style="background-image: url('img/slider_9.jpg')"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide__img b-lazy" data-src="img/slider_10.jpg"></div>
+                                <div class="swiper-slide__img" style="background-image: url('img/slider_10.jpg')"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide__img b-lazy" data-src="img/slider_11.jpg"></div>
+                                <div class="swiper-slide__img" style="background-image: url('img/slider_11.jpg')"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide__img b-lazy" data-src="img/slider_12.jpg"></div>
+                                <div class="swiper-slide__img" style="background-image: url('img/slider_12.jpg')"></div>
                             </div>
                         </div>
                     </div>
@@ -1295,29 +1294,69 @@
             </div>
             <div class="row pt-4 px-md-5">
                 <div class="col-12 col-lg-6 video-reviews__block">
-                    <!-- <iframe width="100%" height="330" src="https://www.youtube.com/embed/ye0W1mEKMHY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-                    <video width="100%" height="330" src="img/video/myagkie-okna-dlya-natashi-korolyovoj-ot-«fabriki-myagkix-okon-55m.ru»--—--bona-kompani.mp4"></video>
+                    <video
+                        id="my-video"
+                        class="video-js"
+                        controls
+                        preload="auto"
+                        poster="img/video/poster1.jpg"
+                        data-setup="{}">
+                        <source src="img/video/myagkie-okna-dlya-natashi-korolyovoj-ot-«fabriki-myagkix-okon-55m.ru»--—--bona-kompani.mp4" type="video/mp4" />
+                        <p class="vjs-no-js">
+                            Для просмотра этого видео включите JavaScript
+                        </p>
+                    </video>                
                     <p class="video-reviews__title">
                         Мягкие окна полный обзор: Замер, установка и эксплуатация + реальный видео отзыв
                     </p>
                 </div>
                 <div class="col-12 col-lg-6 video-reviews__block">
-                    <!-- <iframe width="100%" height="330" src="https://www.youtube.com/embed/PxoACJSgTlo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-                    <video width="100%" height="330" src="img/video/myagkie-okna-dlya-natashi-korolyovoj-ot-«fabriki-myagkix-okon-55m.ru»--—--bona-kompani.mp4"></video>
+                    <video
+                        id="my-video"
+                        class="video-js"
+                        controls
+                        preload="auto"
+                        poster="img/video/poster1.jpg"
+                        data-setup="{}">
+                        <source src="img/video/myagkie-okna-dlya-natashi-korolyovoj-ot-«fabriki-myagkix-okon-55m.ru»--—--bona-kompani.mp4" type="video/mp4" />
+                        <p class="vjs-no-js">
+                            Для просмотра этого видео включите JavaScript
+                        </p>
+                    </video> 
                     <p class="video-reviews__title">
                         Мягкие окна полный обзор: Замер, установка и эксплуатация + реальный видео отзыв
                     </p>
                 </div>
                 <div class="col-12 col-lg-6 video-reviews__block">
-                    <!-- <iframe width="100%" height="330" src="https://www.youtube.com/embed/Ji512BPYEfw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-                    <video width="100%" height="330" src="img/video/myagkie-okna-dlya-natashi-korolyovoj-ot-«fabriki-myagkix-okon-55m.ru»--—--bona-kompani.mp4"></video>
+                    <video
+                        id="my-video"
+                        class="video-js"
+                        controls
+                        preload="auto"
+                        poster="img/video/poster1.jpg"
+                        data-setup="{}">
+                        <source src="img/video/myagkie-okna-dlya-natashi-korolyovoj-ot-«fabriki-myagkix-okon-55m.ru»--—--bona-kompani.mp4" type="video/mp4" />
+                        <p class="vjs-no-js">
+                            Для просмотра этого видео включите JavaScript
+                        </p>
+                    </video> 
                     <p class="video-reviews__title">
                         Мягкие окна полный обзор: Замер, установка и эксплуатация + реальный видео отзыв
                     </p>
                 </div>
                 <div class="col-12 col-lg-6 video-reviews__block">
-                    <!-- <iframe width="100%" height="330" src="https://www.youtube.com/embed/WU5v9ALijcU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-                    <video width="100%" height="330" src="img/video/myagkie-okna-dlya-natashi-korolyovoj-ot-«fabriki-myagkix-okon-55m.ru»--—--bona-kompani.mp4"></video>
+                    <video
+                        id="my-video"
+                        class="video-js"
+                        controls
+                        preload="auto"
+                        poster="img/video/poster1.jpg"
+                        data-setup="{}">
+                        <source src="img/video/myagkie-okna-dlya-natashi-korolyovoj-ot-«fabriki-myagkix-okon-55m.ru»--—--bona-kompani.mp4" type="video/mp4" />
+                        <p class="vjs-no-js">
+                            Для просмотра этого видео включите JavaScript
+                        </p>
+                    </video> 
                     <p class="video-reviews__title">
                         Мягкие окна полный обзор: Замер, установка и эксплуатация + реальный видео отзыв
                     </p>

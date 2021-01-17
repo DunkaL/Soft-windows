@@ -1948,16 +1948,14 @@ img {
 }
 
 .vjs-icon-play,
-.video-js .vjs-play-control .vjs-icon-placeholder,
-.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+.video-js .vjs-play-control .vjs-icon-placeholder {
   font-family: VideoJS;
   font-weight: normal;
   font-style: normal;
 }
 
 .vjs-icon-play:before,
-.video-js .vjs-play-control .vjs-icon-placeholder:before,
-.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+.video-js .vjs-play-control .vjs-icon-placeholder:before {
   content: "\f101";
 }
 
@@ -2159,6 +2157,7 @@ img {
 .video-js .vjs-volume-level:before,
 .video-js .vjs-play-progress:before {
   content: "\f111";
+  color: #ffcc00;
 }
 
 .vjs-icon-circle-outline {
@@ -2489,7 +2488,6 @@ body.vjs-full-window {
 
 .video-js .vjs-big-play-button {
   font-size: 3em;
-  line-height: 1.5em;
   height: 100px;
   width: 100px;
   display: block;
@@ -2502,12 +2500,30 @@ body.vjs-full-window {
   cursor: pointer;
   opacity: 1;
   border: .5rem solid #fff;
-  background-color: #2B333F;
-  background-color: rgba(43,51,63,0.7);
+  background-color: #ff0000;
   border-radius: 100%;
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
+}
+
+.video-js .vjs-big-play-button .vjs-icon-placeholder {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: -8px;
+  margin-top: 3px;
+}
+
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+  font-family: 'icomoon' !important;
+  font-size: 4rem;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+  content: "\e90e";
 }
 
 .vjs-big-play-centered .vjs-big-play-button {
@@ -2519,12 +2535,7 @@ body.vjs-full-window {
 
 .video-js:hover .vjs-big-play-button,
 .video-js .vjs-big-play-button:focus {
-  border-color: #fff;
-  background-color: #73859f;
-  background-color: rgba(115,133,159,0.5);
-  -webkit-transition: all 0s;
-  -o-transition: all 0s;
-  transition: all 0s;
+  background-color: #e00000;
 }
 
 .vjs-controls-disabled .vjs-big-play-button,
@@ -2765,8 +2776,7 @@ body.vjs-full-window {
   left: 0;
   right: 0;
   height: 3em;
-  background-color: #2B333F;
-  background-color: rgba(43,51,63,0.7);
+  background-color: transparent;
 }
 
 .vjs-has-started .vjs-control-bar {
@@ -2916,7 +2926,7 @@ body.vjs-full-window {
 }
 
 .video-js .vjs-play-progress {
-  background-color: #fff;
+  background-color: #ffcc00;
 }
 
 .video-js .vjs-play-progress:before {
@@ -2928,11 +2938,11 @@ body.vjs-full-window {
 }
 
 .video-js .vjs-load-progress {
-  background: rgba(115,133,159,0.5);
+  background: #908f91;
 }
 
 .video-js .vjs-load-progress div {
-  background: rgba(115,133,159,0.75);
+  background: #908f91;
 }
 
 .video-js .vjs-time-tooltip {
@@ -3011,8 +3021,7 @@ body.vjs-full-window {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #73859f;
-  background-color: rgba(115,133,159,0.5);
+  background-color: rgba(255,255,255,0.418);
 }
 
 .video-js .vjs-slider.disabled {
@@ -3166,7 +3175,7 @@ body.vjs-full-window {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #fff;
+  background-color: #ffcf00;
 }
 
 .video-js .vjs-volume-level:before {
@@ -3812,13 +3821,11 @@ video::-webkit-media-text-track-display {
 
 .js-focus-visible .video-js *:focus:not(.focus-visible) {
   outline: none;
-  background: none;
 }
 
 .video-js *:focus:not(:focus-visible),
 .video-js .vjs-menu *:focus:not(:focus-visible) {
   outline: none;
-  background: none;
 }
 
 .cocoen {
@@ -4473,7 +4480,6 @@ iframe {
   display: -ms-flexbox;
   display: flex;
   min-height: 580px;
-  max-width: 1920px;
   margin: 0 auto 2rem;
   overflow: hidden;
 }
@@ -4506,7 +4512,7 @@ iframe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 342px;
+  max-width: 345px;
   font-size: 2rem;
 }
 
@@ -4551,7 +4557,7 @@ iframe {
   left: 0;
   top: 0;
   height: 100%;
-  width: 100%;
+  width: 1000%;
   background-color: #fc6f32;
   -webkit-transform: skew(33deg);
       -ms-transform: skew(33deg);
@@ -5162,7 +5168,7 @@ iframe {
 }
 
 .swiper__description .gallery-top .swiper-slide {
-  max-height: 460px;
+  max-height: 485px;
 }
 
 .swiper__description .gallery-top .swiper-slide__img {
@@ -5236,6 +5242,10 @@ iframe {
 
 .video-reviews__block {
   margin-bottom: 5rem;
+}
+
+.video-reviews__block .video-js {
+  height: 330px;
 }
 
 .video-reviews__title {
