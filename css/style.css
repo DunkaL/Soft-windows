@@ -2320,7 +2320,7 @@ iframe {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  padding: 0 1rem;
+  padding: 1.15rem 1.6rem;
   font-size: 1.8rem;
   font-weight: 900;
   -webkit-transition: .2s linear;
@@ -2349,7 +2349,9 @@ iframe {
 }
 
 .active {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .btn {
@@ -2745,6 +2747,10 @@ iframe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.intro__form-group .form__input {
+  margin-right: 1.5rem;
 }
 
 .intro__subtitle {
@@ -3195,6 +3201,10 @@ iframe {
   display: flex;
 }
 
+.appeal__form-group .form__input {
+  margin-right: 3rem;
+}
+
 .appeal__form-subtitle {
   margin: 0;
   padding-top: 1.2rem;
@@ -3391,6 +3401,7 @@ iframe {
 
 .instruction__cards {
   padding: 4rem 0 3rem;
+  margin: 0;
 }
 
 .instruction__cards-item {
@@ -3571,7 +3582,6 @@ iframe {
 }
 
 .prize__form-group .form__input {
-  width: 30%;
   margin-right: 2rem;
 }
 
@@ -8598,7 +8608,7 @@ iframe {
   }
 }
 
-@media only screen and (max-width: 1680px) {
+@media only screen and (max-width: 1725px) {
   .intro__image {
     right: -10%;
   }
@@ -8609,16 +8619,16 @@ iframe {
     margin-left: 0;
   }
 
+  .intro__image {
+    right: -20%;
+  }
+
   .intro__subtitle {
     margin-left: 0;
   }
 }
 
-@media only screen and (max-width: 1366px) {
-  .intro__image {
-    right: -25%;
-  }
-
+@media only screen and (max-width: 1399px) {
   .instruction__cards-item {
     padding: 0 4rem;
   }
@@ -8630,17 +8640,37 @@ iframe {
   .instruction__cards-line-last::before {
     right: -155px;
   }
-}
 
-@media only screen and (max-width: 1280px) {
   .footer__center {
     width: 58%;
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1355px) {
+  .intro__image {
+    right: -25%;
+  }
+}
+
+@media only screen and (max-width: 1270px) {
+  .intro__image {
+    right: -35%;
+  }
+
+  .intro__image {
+    right: -35%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
   .hamburger {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 2rem;
   }
 
   .navbar__logo {
@@ -8678,14 +8708,95 @@ iframe {
   }
 
   .navbar__nav-subnav {
-    min-width: 100%;
     position: relative;
+  }
+
+  .navbar__nav-subnav>li:not(:first-child) {
+    border: 0;
+  }
+
+  .navbar__nav-subnav-list {
+    min-width: 100%;
   }
 
   .navbar__nav-subnav-title {
     display: none;
   }
 
+  .mouse .navbar__nav-item:hover .navbar__nav-subnav {
+    display: block;
+  }
+
+  .active {
+    display: block;
+  }
+
+  .intro__image {
+    right: -50%;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .appeal__form-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .appeal__form-group .form__input {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .instruction__cards-item {
+    padding: 0 1rem;
+  }
+
+  .instruction__cards-line-oblique::before {
+    right: 117px;
+  }
+
+  .instruction__cards-line-last::before {
+    right: -145px;
+  }
+
+  .prize__form-group .form__input {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .prize__form-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .footer__left {
+    width: 30%;
+  }
+
+  .footer__left-social {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+
+  .footer__center {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
   .navbar__phone {
     position: absolute;
     width: 100%;
@@ -8719,10 +8830,6 @@ iframe {
     background-color: #183749;
   }
 
-  .intro__image {
-    right: -50%;
-  }
-
   .instruction__cards-line::before {
     display: none;
   }
@@ -8735,28 +8842,65 @@ iframe {
     display: none;
   }
 
+  .footer__right {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .intro__image {
+    right: -70%;
+  }
+
+  .services__cards-text .excerpt {
+    display: none;
+  }
+
+  .services .swiper-button-next {
+    display: block;
+  }
+
+  .services .swiper-button-prev {
+    display: block;
+  }
+
+  .fittings .swiper-button-next {
+    display: block;
+  }
+
+  .fittings .swiper-button-prev {
+    display: block;
+  }
+
+  .instruction__cards-line {
+    margin-bottom: 3rem;
+  }
+
+  .instruction .swiper-button-next {
+    display: block;
+  }
+
+  .instruction .swiper-button-prev {
+    display: block;
+  }
+
+  .prize__form-group {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
   .prize__form-group .form__input {
-    width: 45%;
+    margin-bottom: 0;
+    margin-right: 2rem;
   }
 
   .footer__left {
-    width: 30%;
-  }
-
-  .footer__left-social {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 0;
-  }
-
-  .footer__center {
-    width: 100%;
-  }
-
-  .footer__right {
-    width: 30%;
+    width: 50%;
   }
 }
 
@@ -8807,11 +8951,6 @@ iframe {
 }
 
 @media only screen and (max-width: 800px) {
-  .cocoen-drag:before {
-    top: 47.2%;
-    margin-left: -10px;
-  }
-
   .title__heading {
     font-size: 1.8rem;
     padding: .7rem 1.3rem;
@@ -8859,20 +8998,9 @@ iframe {
             align-items: end;
   }
 
-  .services .swiper-button-next {
-    display: block;
-  }
-
-  .services .swiper-button-prev {
-    display: block;
-  }
-
-  .fittings .swiper-button-next {
-    display: block;
-  }
-
-  .fittings .swiper-button-prev {
-    display: block;
+  .intro__form-group .form__input {
+    margin-right: 0;
+    margin-bottom: 2rem;
   }
 
   .mounting {
@@ -8894,18 +9022,6 @@ iframe {
 
   .instruction__cards-item {
     padding: 0 15rem;
-  }
-
-  .instruction__cards-line {
-    margin-bottom: 3rem;
-  }
-
-  .instruction .swiper-button-next {
-    display: block;
-  }
-
-  .instruction .swiper-button-prev {
-    display: block;
   }
 
   .prize__title {
@@ -8977,23 +9093,7 @@ iframe {
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .container,
-  .container-fluid,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl,
-  .container-xxl {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
-  .cocoen-drag:before {
-    top: 46.7%;
-    margin-left: -10px;
-  }
-
+@media only screen and (max-width: 730px) {
   .btn--orange-craiola {
     max-width: 300px;
     width: 100%;
@@ -9004,18 +9104,12 @@ iframe {
     max-width: 300px;
   }
 
-  .title__subheading {
-    font-size: 1.4rem;
-    margin-top: -0.4rem;
-    padding-top: 0.9rem;
-  }
-
   .intro__bg {
     max-height: 375px;
   }
 
   .intro__title-subheading {
-    max-width: 303px;
+    max-width: 355px;
   }
 
   .intro__inner {
@@ -9035,7 +9129,7 @@ iframe {
   }
 
   .intro__categories {
-    max-width: 200px;
+    max-width: 355px;
   }
 
   .intro__image {
@@ -9068,6 +9162,31 @@ iframe {
   .intro__subtitle {
     margin-top: 2rem;
   }
+}
+
+@media only screen and (max-width: 640px) {
+  .intro__image {
+    opacity: .6;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container,
+  .container-fluid,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .title__subheading {
+    font-size: 1.4rem;
+    margin-top: -0.4rem;
+    padding-top: 0.9rem;
+  }
 
   .appeal__form-group {
     -webkit-box-orient: vertical;
@@ -9087,10 +9206,12 @@ iframe {
     padding: 0 2rem;
   }
 
-  .prize__form-group .form__input {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 2rem;
+  .about-company::before {
+    background-image: none !important;
+  }
+
+  .prize {
+    background-image: none !important;
   }
 
   .prize__form-group {
@@ -9098,9 +9219,11 @@ iframe {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  }
+
+  .prize__form-group .form__input {
+    margin-right: 0;
+    margin-bottom: 2rem;
   }
 
   .map {
@@ -9127,10 +9250,6 @@ iframe {
 }
 
 @media only screen and (max-width: 480px) {
-  .cocoen-drag:before {
-    top: 45.7%;
-  }
-
   .intro__title-heading {
     font-size: 4rem;
   }
@@ -9221,10 +9340,6 @@ iframe {
 }
 
 @media only screen and (max-width: 414px) {
-  .cocoen-drag:before {
-    top: 44.7%;
-  }
-
   .navbar__phone-text {
     max-width: 37%;
   }
@@ -9302,10 +9417,6 @@ iframe {
     padding-right: 1rem;
   }
 
-  .cocoen-drag:before {
-    top: 45%;
-  }
-
   .btn--gift {
     display: none;
   }
@@ -9324,10 +9435,6 @@ iframe {
 }
 
 @media only screen and (max-width: 320px) {
-  .cocoen-drag:before {
-    top: 44.5%;
-  }
-
   .intro__inner {
     padding-top: 6rem;
   }
