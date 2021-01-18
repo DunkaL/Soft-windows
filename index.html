@@ -731,6 +731,7 @@
         </div>
     </section>
     
+    
     <section class="services">
         <div class="container-md">
             <div class="title title--right">
@@ -1690,8 +1691,8 @@
     </button>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
     <script src="js/script.min.js" defer></script>
-<!--     <script src="js/TweenMax.min.js"></script> -->
-<!--     <script src="js/Winwheel.min.js"></script> -->
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/Winwheel.min.js"></script>
     <script>
             let theWheel = new Winwheel({
                 'numSegments'     : 8,     
@@ -1721,19 +1722,89 @@
             let wheelPower = 0;
             let wheelSpinning = false;
 
-            function startSpin() {
-                if (wheelSpinning == false) {
-                    if (wheelPower == 1) {
-                        theWheel.animation.spins = 3;
-                    } else if (wheelPower == 2) {
-                        theWheel.animation.spins = 8;
-                    } else if (wheelPower == 3) {
-                        theWheel.animation.spins = 15;
-                    }
+            function randomInteger(min, max) {
+                let rand = min - 0.5 + Math.random() * (max - min + 1);
+                return Math.round(rand);
+            }
 
-                    theWheel.startAnimation();  
-                    wheelSpinning = true;
+            function startSpin() {
+                // рандом
+                // if (wheelSpinning == false) {
+                //     if (wheelPower == 1) {
+                //         theWheel.animation.spins = 3;
+                //     } else if (wheelPower == 2) {
+                //         theWheel.animation.spins = 8;
+                //     } else if (wheelPower == 3) {
+                //         theWheel.animation.spins = 15;
+                //     }
+
+                //     theWheel.startAnimation();
+                //     wheelSpinning = true;
+                // }
+                // рандом
+
+
+                // приз 1
+                // let stopAt = (0 + Math.floor((Math.random() * 43)))
+
+                // приз 2
+                // let stopAt = (48 + Math.floor((Math.random() * 43)))
+
+                // приз 3
+                // let stopAt = (92 + Math.floor((Math.random() * 43)))
+
+                // приз 4
+                // let stopAt = (138 + Math.floor((Math.random() * 43)))
+
+                // приз 5
+                // let stopAt = (182 + Math.floor((Math.random() * 43)))
+
+                // приз 6
+                // let stopAt = (228 + Math.floor((Math.random() * 43)))
+
+                // приз 7
+                // let stopAt = (272 + Math.floor((Math.random() * 43)))
+
+                // приз 8
+                // let stopAt = (318 + Math.floor((Math.random() * 43)))
+
+                let stopAt = 0;
+
+                switch (randomInteger(1, 6)) {
+                    case 1:
+                        // приз 1
+                        stopAt = (0 + Math.floor((Math.random() * 40)));
+                        console.log('приз 1 скидка на монтаж 10%');
+                        break;
+                    case 2:
+                        // приз 3
+                        stopAt = (92 + Math.floor((Math.random() * 40)));
+                        console.log('приз 3 ремешки для скрутки');
+                        break;
+                    case 3:
+                        // приз 4
+                        stopAt = (138 + Math.floor((Math.random() * 40)));
+                        console.log('приз 4 шампанское');
+                        break;
+                    case 4:
+                        // приз 5
+                        stopAt = (182 + Math.floor((Math.random() * 40)));
+                        console.log('приз 5 скидка на монтаж 10%');
+                        break;
+                    case 5:
+                        // приз 7
+                        stopAt = (272 + Math.floor((Math.random() * 40)));
+                        console.log('приз 7 ремешки для скрутки');
+                        break;
+                    case 6:
+                        // приз 8
+                        stopAt = (318 + Math.floor((Math.random() * 40)));
+                        console.log('приз 8 шампанское');
+                        break;
                 }
+
+                theWheel.animation.stopAngle = stopAt;
+                theWheel.startAnimation();
             }
 
             document.querySelector('#tut9PositionedButton').addEventListener("click", startSpin);
